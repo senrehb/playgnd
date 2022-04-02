@@ -1,9 +1,11 @@
 #!/bin/bash
 # Abfrage Sensor DHT22
 if Errorlevel 1
+then
         echo "Fehler"
         goto End
         else
+        echo "READ"
         goto Read
         fi
 :Read  
