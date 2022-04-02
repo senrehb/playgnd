@@ -1,4 +1,4 @@
-#!bin/bash
+!bin/bash
 # Dauerschleife abfrage Sensor DHT22
 for ((i=1; i<=1440; i++)); do
         echo
