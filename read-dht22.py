@@ -1,6 +1,6 @@
 import time
 #import board
-import adafruit_dht
+import Adafruit_DHT
  
 # Initial the dht device, with data pin connected to:
 # dhtDevice = adafruit_dht.DHT22(board.D4)
@@ -9,6 +9,7 @@ import adafruit_dht
 # This may be necessary on a Linux single board computer like the Raspberry Pi,
 # but it will not work in CircuitPython.
 dhtDevice = adafruit_dht.DHT22(board.D4, use_pulseio=False)
+#DHT_SENSOR = Adafruit_DHT.DHT22
  
 while True:
     try:
