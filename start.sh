@@ -6,20 +6,10 @@ if [ -f /home/pi/playgnd/read-dht21.py ]
         echo
         echo "Sensorabfrage gestartet..."
         echo 
-        goto dht22read
-        else
-        echo " Fehler - Datei nicht vorhanden"
-        goto ErrTxT
-fi
-:dht22read
-       # cd /home/pi/playgnd/
+      # cd /home/pi/playgnd/
         python read-dht22.py
         sleep 5
-        goto End1
-:ErrTxT
-echo "Ende.....Fehler !"
-sleep 5
-goto End2
-:End1
+        else
+        echo " Fehler - Datei nicht vorhanden"
+fi
 echo "The End"
-:End2
