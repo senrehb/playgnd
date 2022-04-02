@@ -1,6 +1,6 @@
 #!/bin/bash
 # Abfrage Sensor DHT22
-if [ "$1" != 0 ]
+if [ $1 = 1 ]
         then
         echo Fehler
         else
