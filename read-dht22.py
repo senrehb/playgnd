@@ -1,5 +1,3 @@
-# Bibliothek für Sensor importieren
-# Bibliothek für Datum Uhrzeit
 import Adafruit_DHT
 import time
 #Sensortyp und GPIO festlegen
