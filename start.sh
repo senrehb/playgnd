@@ -1,18 +1,19 @@
 #!/bin/bash
 # Abfrage Sensor DHT22
-while ["$1" != '']
-do
+if [ "$1" != 0 ]
+        then
+        echo Fehler
+        else
         echo
         echo "Sensorabfrage gestartet..."
         echo ""
        # cd /home/pi/playgnd/
         python read-dht22.py
         sleep 5
-done
-
+fi
 #:End
-#echo
-#echo "Fehler !"
-#sleep 5
+echo
+echo "Ende.....Fehler !"
+sleep 5
 exit 1
 # End
