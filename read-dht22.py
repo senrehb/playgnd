@@ -1,5 +1,5 @@
 import time
-import board
+#import board
 import adafruit_dht
  
 # Initial the dht device, with data pin connected to:
