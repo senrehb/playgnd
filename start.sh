@@ -10,19 +10,19 @@ if [ -f /home/pi/playgnd/read-dht22.py ]
       # cd /home/pi/playgnd/
         python read-dht22.py
         # // RM script
-                if [$1 = 1]
-                then
-                echo
-                echo "Fehler Sensorabfrage"
-                echo
-                sleep 5
-                else
+            #    if [$1 = 1]
+             #   then
+               # echo
+              #  echo "Fehler Sensorabfrage"
+                #echo
+               # sleep 5
+              #  else
                 echo
                 echo "Sensor reading..."
                 echo
                 echo "ready"
                 sleep 5
-                fi
+             #   fi
         else
         echo
         echo " Fehler - Die Datei ist nicht vorhanden"
