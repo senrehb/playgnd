@@ -1,9 +1,12 @@
-!bin/bash
-# Dauerschleife abfrage Sensor DHT22
-#if Errorlevel 1
-  #      echo "Fehler"
- #       goto End
-#        else
+#!/bin/bash
+# Abfrage Sensor DHT22
+if Errorlevel 1
+        echo "Fehler"
+        goto End
+        else
+        goto Read
+        fi
+:Read  
         for ((i=1; i<=10; i++)); do
         echo
         echo "Sensorabfrage gestartet..."
