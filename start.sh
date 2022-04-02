@@ -1,21 +1,31 @@
 #!/bin/bash
 # check exsit to open data
-if [ -f /home/pi/playgnd/read-dht22.py ]
+if [ -f /home/pi/playgnd/read-dht21.py ]
         then
-        echo "... Datei-Prüfung erfolgreich"
+        echo "checking Data..."
+        echo "                ... OK"
         echo
         echo "Sensorabfrage gestartet..."
         echo 
       # cd /home/pi/playgnd/
         python read-dht22.py
         # // RM script
-        echo
-        echo "Sensorabfrage beendet"
-        echo
-        sleep 5
+                if [$1 = 1]
+                then
+                echo
+                echo "Fehler Sensorabfrage"
+                echo
+                sleep 5
+                else
+                echo
+                echo "Sensor reading..."
+                echo
+                echo "ready"
+                sleep 5
+                fi
         else
         echo
         echo " Fehler - Die Datei ist nicht vorhanden"
         echo
-fi
+        fi
 echo "The End"
