@@ -1,6 +1,6 @@
 #!/bin/bash
 # check exsit to open data
-if [ -f /home/pi/playgnd/read-dht21.py ]
+if [ -f /home/pi/playgnd/read-dht22.py ]
         then
         echo "checking Data..."
         echo "                ... OK"
