@@ -20,6 +20,6 @@ s1 = str(value1)
 s2 = str(value2)
 # Variablen zusamensetzen
 s = s0 + s1 + s2
-# Ausgabe in geöffnete Datei
+# Ausgabe in geoeffnete Datei
 f.write(s)
 # Ende
