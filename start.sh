@@ -9,17 +9,17 @@ if [ -f /home/pi/playgnd/read-dht21.py ]
         goto dht22read
         else
         echo " Fehler - Datei nicht vorhanden"
-        goto Error
+        goto ErrTxT
 fi
 :dht22read
        # cd /home/pi/playgnd/
         python read-dht22.py
         sleep 5
         goto End1
-:Error
+:ErrTxT
 echo "Ende.....Fehler !"
 sleep 5
-got End2
+goto End2
 :End1
 echo "The End"
 :End2
