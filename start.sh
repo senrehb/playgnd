@@ -1,28 +1,18 @@
 #!/bin/bash
 # Abfrage Sensor DHT22
-if Errorlevel 1
-then
-        echo "Fehler"
-        goto End
-        else
-        echo "READ"
-        goto Read
-        fi
-:Read  
-        for ((i=1; i<=10; i++)); do
+while ["$1" != '']
+do
         echo
         echo "Sensorabfrage gestartet..."
         echo ""
        # cd /home/pi/playgnd/
-       python read-dht22.py
-       IF Errorlevel 1 goto End
-        echo "...OK."
+     #  python read-dht22.py
         sleep 5
 done
-exit 0
-:End
-echo
-echo "Fehler !"
-sleep 5
+
+#:End
+#echo
+#echo "Fehler !"
+#sleep 5
 exit 1
 # End
