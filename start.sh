@@ -6,7 +6,7 @@ do
         echo "Sensorabfrage gestartet..."
         echo ""
        # cd /home/pi/playgnd/
-     #  python read-dht22.py
+        python read-dht22.py
         sleep 5
 done
 
