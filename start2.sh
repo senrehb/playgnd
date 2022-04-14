@@ -3,7 +3,7 @@
 x="1"
 if [ -f /home/pi/projekt/playgnd/test2.py ]
         then
-                while [ $x -le 10 ]
+                while [ $x -le 12 ]
                 do
         echo
         echo "Sensorabfrage gestartet..."
@@ -11,7 +11,8 @@ if [ -f /home/pi/projekt/playgnd/test2.py ]
       # cd /home/pi/playgnd/
         python test2.py 22 4
         # // RM script
-        sleep 60
+        echo "sleeping for 300 sec"
+        sleep 300
         x=$(( $x + 1 ))
         done
         else
