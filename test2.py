@@ -42,7 +42,7 @@ if humidity is not None and temperature is not None:
     s2 = str(value2)
     # Variablen zusamensetzen
     s = s0 + s1 + s2
-    # Ausgabe in geöffnete Datei
+    # Ausgabe in geoffnete Datei
     f.write(s)
     # Ende
 else:
