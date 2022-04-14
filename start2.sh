@@ -1,6 +1,6 @@
 #!/bin/bash
 # check exsit to open data
-x = 1
+x="1"
 if [ -f /home/pi/projekt/playgnd/test2.py ]
         then
                 while [ $x -le 5 ]
