@@ -13,7 +13,7 @@ gpio = 4
 # Daten auslesen
 humidity, temperature = Adafruit_DHT.read_retry(sensor, gpio)
 # Ausgabe
-print temperature,humidity
+print (temperature,humidity)
 # Ausgabe Datei
 # lokale Datein oeffnen
 f = open('sensor1.log', 'a')
