@@ -6,7 +6,7 @@ if [ -f /home/pi/projekt/playgnd/read-dht22.py ]
         echo "Sensorabfrage gestartet..."
         echo 
       # cd /home/pi/playgnd/
-        python read-dht22.py 22 4
+        python -h read-dht22.py 22 4
         # // RM script
                 if $1 = 100:
                 then
